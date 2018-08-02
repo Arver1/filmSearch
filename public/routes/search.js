@@ -2,11 +2,11 @@ const path = require('path');
 const fs = require('fs');
 
 
-function home(req, res) {
+function search(req, res){
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
-  const stream = fs.createReadStream(path.resolve('index.html'));
+  const stream = fs.createReadStream(path.resolve('movie.html'));
   stream.pipe(res);
 }
 
-module.exports = home;
+module.exports = search;
