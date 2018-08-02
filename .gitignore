@@ -1,4 +1,10 @@
-build
-node_modules
+.DS_Store
 .idea
-npm-debug.log
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+build/
+node_modules/
+Thumbs.db
